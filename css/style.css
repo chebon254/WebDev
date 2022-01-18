@@ -1,10 +1,67 @@
-html{
-    transition: all ease 0.5s;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: opacityChange 1s;
+    text-decoration: none;
+}
+@keyframes opacityChange {
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
 }
 body{
     margin: 0;
     padding: 0;
+    position: relative;
 }
+#load{
+    display: none;
+}
+/* == Loading Screen == */
+.loading{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #eeeeee;
+}
+.loader {
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    border-top: 4px solid #555555;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin .5s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { 
+        -webkit-transform: rotate(0deg); 
+    }
+    100% { 
+        -webkit-transform: rotate(360deg); 
+    }
+  }
+  
+  @keyframes spin {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+  }
+/* == || End Loading Screen == */
 section{
     height: 800px;
     width: 100vw;
@@ -12,6 +69,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
 }
 nav{
     height: 80px;
@@ -22,6 +80,7 @@ nav{
     box-sizing: border-box;
     padding: 0px 0px 0px 40px;
     background-color: #33333352;
+    position: relative;
 }
 nav a{
     padding: 10px;
@@ -48,11 +107,11 @@ nav span{
     color: #ffffff;
 }
 nav .links{
-    height: 800px;
+    height: 100vh;
     width: 400px;
-    position: absolute;
+    position: fixed;
     right: -400px;
-    top: 0px;
+    top: 0;
     background-color: #00000033;
     z-index: 10;
 }
@@ -123,6 +182,16 @@ nav .links .link:hover{
     width: fit-content;
     padding: 0px 0px 0px 40px;
     transform: translateY(-60px);
+    animation: moveTop 1s;
+}
+@keyframes moveTop {
+    from{
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    to{
+        opacity: 1;
+    }
 }
 .banner-text h1{
     font-size: 80px;
@@ -144,7 +213,7 @@ nav .links .link:hover{
     height: 50px;
     width: 200px;
     border: 0;
-    border-radius: 10px;
+    border-radius: 2px;
     outline: none;
     background-color: #ffffff;
     font-size: 20px;
@@ -158,6 +227,35 @@ nav .links .link:hover{
     background-color: #333333;
     color: #ffffff;
     transition: all ease 0.4s;
+}
+.breadcrumb{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.breadcrumb a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #eeeeee;
+    font-family: 'Nunito', sans-serif;
+}
+.breadcrumb span:nth-child(2){
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #eeeeee;
+    margin: 0px 4px;
+    font-family: 'Nunito', sans-serif;
+}
+.breadcrumb span:nth-child(3){
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #eeeeee;
+    font-family: 'Nunito', sans-serif;
 }
 main{
     height: fit-content;
@@ -213,7 +311,7 @@ main{
     font-size: 16px;
     margin: 0px 8px;
 }
-.portfolio a{
+.portfolio a, p{
     font-size: 14px;
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
@@ -283,4 +381,129 @@ footer{
     background-color: #333333;
     color: #ffffff;
     margin: 0px;
+}
+
+/* == ABOUT PAGE == */
+.about{
+    width: 900px;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    margin: auto;
+}
+.about h1{
+    font-family: 'Nunito', sans-serif;
+    margin: 10px 0px;
+}
+.about p{
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    margin: 10px 0px;
+}
+.about iframe{
+    min-height: 400px;
+    aspect-ratio: 16/9;
+}
+/* == || ABOUT PAGE == */
+
+/* == PORTFOLIO == */
+.portfolio{
+    width: fit-content;
+    margin: auto;
+}
+.gallery{
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.gallery .col{
+    height: 360px;
+    width: 280px;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 8px;
+    text-decoration: none;
+}
+#gallery-one .col:nth-child(1){
+    background-image: url('img/train.jpg');
+}
+#gallery-one .col:nth-child(2){
+    background-image: url('img/slow.jpg');
+}
+#gallery-one .col:nth-child(3){
+    background-image: url('img/person.jpg');
+}
+#gallery-two .col:nth-child(1){
+    background-image: url('img/it.jpg');
+}
+#gallery-two .col:nth-child(2){
+    background-image: url('img/lens.jpg');
+}
+#gallery-two .col:nth-child(3){
+    background-image: url('img/drone.jpg');
+}
+.gallery .col .col-text{
+    height: 360px;
+    width: 280px;
+    background-color: #00000077;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2px;
+    visibility: hidden;
+    transition: all ease .2s;
+}
+.gallery .col:hover .col-text{
+    visibility: visible;
+    cursor: pointer;
+}
+.col-text strong{
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    margin: 10px;
+}
+.col-text p{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    margin: 0;
+}
+/* == || PORTFOLIO == */
+/* ==  == */
+/* ==  == */
+/* ==  == */
+/* ==  == */
+/* ==  == */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
 }

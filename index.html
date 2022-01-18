@@ -26,96 +26,101 @@
     <link rel="stylesheet" href="">
 
 </head>
-<body>
-    <section class="banner-back">
-        <nav>
-            <a class="menu-bar" href="#">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </a>
-            <span>WebDev</span>
-            <div class="links">
-                <div class="cancel-btn">
-                    x
+<body onload="loadScreen()">
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+    <div class="load" id="load">
+        <section class="banner-back">
+            <nav>
+                <a class="menu-bar" href="#">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </a>
+                <span>WebDev</span>
+                <div class="links">
+                    <div class="cancel-btn">
+                        x
+                    </div>
+                    <a href="index.html" class="link">Home</a>
+                    <a href="about.html" class="link">About</a>
+                    <a href="contact.html" class="link">Contact</a>
+                    <a href="portfolio.html" class="link">Portfolio</a>
+                    <a href="FAQ.html" class="link">FAQ</a>
                 </div>
-                <a href="index.html" class="link">Home</a>
-                <a href="about.html" class="link">About</a>
-                <a href="contact.html" class="link">Contact</a>
-                <a href="portfolio.html" class="link">Portfolio</a>
-                <a href="FAQ.html" class="link">FAQ</a>
-            </div>
-        </nav>
-        <div class="banner">
-            <div class="banner-text">
-                <h1>Expand You Global Scope</h1>
-                <p>Discover how to establish an online presence.</p>
-                <button>Get Started Now</button>
-            </div>
-        </div>
-    </section>
-    <main>
-        <div class="portfolio">
-            <h1>Portfolio</h1>
-            <div class="portfolio-link">
-                <span> <i class="fab fa-youtube"></i> YouTube:</span>
-                <a href="https://www.youtube.com/channel/UCjRD7xWJbLW_L_5nLzvD9Bw" target="_blank">Code Prolific</a>
-            </div>
-        </div>
-        <div class="skills">
-            <div class="skill">
-                <img src="css/img/webdev.jpg" alt="Web Developer" height="250px" width="250px">
-                <div class="skill-text">
-                    <h4>Web Development</h4>
-                    <p>I'm well experienced, and will deliver modern quality products
-                    </p>
+            </nav>
+            <div class="banner">
+                <div class="banner-text">
+                    <h1>Expand You Global Scope</h1>
+                    <p>Discover how to establish an online presence.</p>
+                    <button onclick="redirect()">Get Started Now</button>
                 </div>
             </div>
-            <div class="skill">
-                <img src="css/img/online tutor.jpg" alt="Online Tutor" height="250px" width="250px">
-                <div class="skill-text">
-                    <h4>Online Tutoring</h4>
-                    <p>I will take you from basic to advance knowledge in HTML 5, CSS 3, Java & Android
-                    </p>
+        </section>
+        <main>
+            <div class="portfolio">
+                <h1>Portfolio</h1>
+                <div class="portfolio-link">
+                    <span> <i class="fab fa-youtube"></i> YouTube:</span>
+                    <a href="https://www.youtube.com/channel/UCjRD7xWJbLW_L_5nLzvD9Bw" target="_blank">Code Prolific</a>
                 </div>
             </div>
-        </div>
-        <div class="skills">
-            <div class="skill">
-                <img src="css/img/webdev.jpg" alt="Web Developer" height="250px" width="250px">
-                <div class="skill-text">
-                    <h4>Web Development</h4>
-                    <p>I'm well experienced, and will deliver modern quality products
-                    </p>
+            <div class="skills">
+                <div class="skill">
+                    <img src="css/img/webdev.jpg" alt="Web Developer" height="250px" width="250px">
+                    <div class="skill-text">
+                        <h4>Web Development</h4>
+                        <p>I'm well experienced, and will deliver modern quality products
+                        </p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img src="css/img/online tutor.jpg" alt="Online Tutor" height="250px" width="250px">
+                    <div class="skill-text">
+                        <h4>Online Tutoring</h4>
+                        <p>I will take you from basic to advance knowledge in HTML 5, CSS 3, Java & Android
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="skill">
-                <img src="css/img/online tutor.jpg" alt="Online Tutor" height="250px" width="250px">
-                <div class="skill-text">
-                    <h4>Online Tutoring</h4>
-                    <p>I will take you from basic to advance knowledge in HTML 5, CSS 3, Java & Android
-                    </p>
+            <div class="skills">
+                <div class="skill">
+                    <img src="css/img/webdev.jpg" alt="Web Developer" height="250px" width="250px">
+                    <div class="skill-text">
+                        <h4>Data Entry</h4>
+                        <p>I'm well experienced, as per clientele directive
+                        </p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img src="css/img/online tutor.jpg" alt="Online Tutor" height="250px" width="250px">
+                    <div class="skill-text">
+                        <h4>Admin Assist</h4>
+                        <p>I'm able to lead teams. Orginizations is my motive using best know online softwares: JIRA & CLICK UP
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="portfolio">
-            <h1>Questions</h1>
-            <div class="portfolio-link">
-               <button>Ask Now</button>
+            <div class="portfolio">
+                <h1>Questions</h1>
+                <div class="portfolio-link">
+                   <button>Ask Now</button>
+                </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <div class="portfolio">
-            <h1>Get In Touch;</h1>
-            <div class="portfolio-link">
-                <a href="https://www.youtube.com/channel/UCjRD7xWJbLW_L_5nLzvD9Bw">kelvinchebon90@gmail.com</a>
+        </main>
+        <footer>
+            <div class="portfolio">
+                <h1>Get In Touch;</h1>
+                <div class="portfolio-link">
+                    <a href="https://www.youtube.com/channel/UCjRD7xWJbLW_L_5nLzvD9Bw">kelvinchebon90@gmail.com</a>
+                </div>
             </div>
-        </div>
-        <div class="copyright">
-            WebDev | 2021 Global Inc
-        </div>
-    </footer>
+            <div class="copyright">
+                WebDev | 2021 Global Inc
+            </div>
+        </footer>
+    </div>
 
     <!-- == Script == -->
         <script src="js/script.js"></script>

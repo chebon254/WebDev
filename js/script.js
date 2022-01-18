@@ -14,3 +14,18 @@ cancelBtn.onclick = ()=>{
     menu.classList.add("hide");
     menu.classList.remove("active");
 }
+
+var loadTimer;
+
+function loadScreen() {
+  loadTimer = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("load").style.display = "block";
+}
+
+function redirect() {
+  location.replace("contact.html");
+}

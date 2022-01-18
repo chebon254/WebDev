@@ -26,7 +26,11 @@
     <link rel="stylesheet" href="">
 
 </head>
-<body>
+<body onload="loadScreen()">
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+    <div class="load" id="load">
     <section class="banner-back">
         <nav>
             <a class="menu-bar" href="#">
@@ -49,9 +53,57 @@
         <div class="banner">
             <div class="banner-text">
                 <h1>Portfolio Page</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a><span>/</span><span>Portfolio</span>
+                </div>
             </div>
         </div>
     </section>
+    <main>
+        <div class="portfolio">
+            <h1>WebDev</h1>
+            <div class="gallery" id="gallery-one">
+                <a href="https://quiz-app-3a14d.web.app" target="_blank"  class="col">
+                    <div class="col-text">
+                        <strong>Quiz App</strong>
+                        <p>Test Your Online Knowledge</p>
+                    </div>
+                </a>
+                <a href="https://agency-dbf50.web.app/" target="_blank" class="col">
+                    <div class="col-text">
+                        <strong>Agency Website</strong>
+                        <p>New Agency Market Website</p>
+                    </div>
+                </a>
+                <a href="https://ocean-website-89803.web.app/" target="_blank" class="col">
+                    <div class="col-text">
+                        <strong>Beach Website</strong>
+                        <p>Beach Landing Page For Adventures</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery" id="gallery-two">
+                <a href="https://track-ba0b4.web.app/" target="_blank" class="col">
+                    <div class="col-text">
+                        <strong>Fitness Tracking Website</strong>
+                        <p>Track Your Body Health Daily</p>
+                    </div>
+                </a>
+                <a href="https://portfilio-1979b.web.app/" target="_blank" class="col">
+                    <div class="col-text">
+                        <strong>Portfolio Website</strong>
+                        <p>Personal Portfolio Website</p>
+                    </div>
+                </a>
+                <a href="https://youtube.com/channel/UCjRD7xWJbLW_L_5nLzvD9Bw" target="_blank" class="col">
+                    <div class="col-text">
+                        <strong>YouTube Channel</strong>
+                        <p>Watch My Videos On YouTube</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="portfolio">
             <h1>Get In Touch;</h1>
@@ -63,6 +115,7 @@
             WebDev | 2021 Global Inc
         </div>
     </footer>
+    </div>
 
     <!-- == Script == -->
         <script src="js/script.js"></script>

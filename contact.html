@@ -26,7 +26,11 @@
     <link rel="stylesheet" href="">
 
 </head>
-<body>
+<body onload="loadScreen()">
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+    <div class="load" id="load">
     <section class="banner-back">
         <nav>
             <a class="menu-bar" href="#">
@@ -49,6 +53,9 @@
         <div class="banner">
             <div class="banner-text">
                 <h1>Contact Page</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a><span>/</span><span>Contact</span>
+                </div>
             </div>
         </div>
     </section>
@@ -63,6 +70,7 @@
             WebDev | 2021 Global Inc
         </div>
     </footer>
+    </div>
 
     <!-- == Script == -->
         <script src="js/script.js"></script>

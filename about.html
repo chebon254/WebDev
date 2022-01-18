@@ -26,7 +26,11 @@
     <link rel="stylesheet" href="">
 
 </head>
-<body>
+<body onload="loadScreen()">
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+    <div class="load" id="load">
     <section class="banner-back">
         <nav>
             <a class="menu-bar" href="#">
@@ -49,20 +53,25 @@
         <div class="banner">
             <div class="banner-text">
                 <h1>About Page</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a><span>/</span><span>About</span>
+                </div>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="portfolio">
-            <h1>Get In Touch;</h1>
-            <div class="portfolio-link">
-                <a href="https://www.youtube.com/channel/UCjRD7xWJbLW_L_5nLzvD9Bw">kelvinchebon90@gmail.com</a>
-            </div>
+    <main>
+        <div class="about">
+            <h1>WebDev</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, odit incidunt? Beatae tempore unde ut ipsa molestiae, quidem sequi reiciendis ullam adipisci suscipit, aliquam quos, repudiandae quia eius! Fugiat, ipsum?</p>
+            <iframe width="" height="" src="https://www.youtube.com/embed/-pW2ATrDnA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+    </main>
+    <footer>
         <div class="copyright">
             WebDev | 2021 Global Inc
         </div>
     </footer>
+    </div>
 
     <!-- == Script == -->
         <script src="js/script.js"></script>

@@ -266,10 +266,21 @@ nav{
     overflow: hidden;
     transform: translate3d(0px, 0px, 0px);
 
-    background-image: url('img/i-b-image.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+.blog-paralax{
+    background-image: url('img/blog.jpg');
+}
+.team-paralax{
+    background-image: url('img/team.jpg');
+}
+.contact-paralax{
+    background-image: url('img/contact.jpg');
+}
+.portfolio-paralax{
+    background-image: url('img/portfolio.jpg');
 }
 .thin-paralax-mask{
     height: 350px;
@@ -749,6 +760,71 @@ footer{
 }
 /* == TEAM == */
 
+
+
+/* == BLOG == */
+.blogs{
+    padding: 90px 0px;
+    width: 100%;
+}
+.blog-head{
+    text-align: center;
+    padding: 10px 0px;
+}
+.blog-head h3{
+    color: #fecd36;
+    font-weight: 500;
+    font-size: 16px;
+}
+.blog-head h1{
+    color: #0e3155;
+    font-weight: 800;
+    font-size: 24px;
+}
+.blog-members{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+.blog{
+    height: fit-content;
+    width: 250px;
+}
+.blog img{
+    height: 320px;
+    width: 250px;
+}
+.blog p:nth-child(2){
+    font-size: 14px;
+    font-weight: 500;
+    color: #fecd36;
+    text-align: left;
+    margin: 10px 0px;
+}
+.blog p:nth-child(2) i{
+    margin: 0px 5px 0px 0px;
+}
+.blog p:nth-child(3){
+    font-size: 14px;
+    font-weight: 500;
+    color: #0e3155;
+    text-align: left;
+    margin: 10px 0px;
+}
+.blog p:nth-child(4){
+    font-size: 14px;
+    font-weight: 400;
+    color: #0e3155;
+    text-align: left;
+    margin: 5px 0px;
+}
+/* == || BLOG == */
+
+
+
+
 /* == CONATACT PAGE == */
 
 /* == Contact == */
@@ -856,7 +932,6 @@ form button{
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
   }
   
   /* Add padding BETWEEN each column */
@@ -872,6 +947,7 @@ form button{
     width: 296px;
     border-radius: 2px;
     display: none; /* Hide all elements by default */
+    box-shadow: 2px 2px 12px #00000033;
   }
   .portfolio .column:hover {
       cursor: pointer;
@@ -1049,6 +1125,12 @@ form button{
     .testimonial P:nth-child(4){
         max-width: 320px;
         min-width: 280px;
+    }
+    .portfolio .row {
+        justify-content: center;
+      }
+    .blog{
+        margin: 20px 0px;
     }
     .footer-col{
         margin: 20px 0px;

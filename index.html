@@ -3,126 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Web, Web Developer, Webdev, developer, Software developer, web designer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chebon Kibet">
 
-    <!-- == Title == -->
+    <!-- == META OG == -->
+    <meta og:title>
+
     <title>WebDev</title>
 
-    <!-- == Favicon == -->
-    <link rel="shortcut icon" type="image/jpg" href="css/img/web_dev.png">
+    <!-- == FAVICON == -->
+    <link rel="shortcut icon" href="css/img/fav.png">
 
-    <!-- == Style Sheet == -->
+    <!-- == STYLESHEET == -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- == Fonts == -->
+    <!-- == ICONS == -->
+    <link rel="stylesheet" href="css/icons/css/all.css">
+
+    <!-- == FONT == -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- == Icons == -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-
-    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
 </head>
-<body onload="loadScreen()">
-    <div class="loading" id="loading">
-        <div class="loader"></div>
-    </div>
-    <div class="load" id="load">
-        <section class="banner-back">
-            <nav>
-                <a class="menu-bar" href="#">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </a>
-                <span>WebDev</span>
-                <div class="links">
-                    <div class="cancel-btn">
-                        x
+<body onload="">
+    <!-- == LOADER == -->
+        <div class="loading" id="loading">
+            <div class="loader"></div>
+        </div>
+    <!-- == || LOADER == -->
+    <!-- == MAIN PAGE == -->
+        <div class="load" id="load">
+            <!-- == HEADER == -->
+                <header class="header">
+                    <nav id="nav-bar">
+                        <div class="nav-container container">
+                            <div class="logo">
+                                <a href="#" class="logo"> <img src="css/img/fav.png" alt="Logo" width="38px">ebDev</a>
+                            </div>
+                            <div class="links" id="links">
+                                <div class="cancel">
+                                    <span class="cancel-btn"><i class="fas fa-times"></i></span>
+                                </div>
+                                <a class="active-link" href="#">HOME</a>
+                                <a href="#">TEAM</a>
+                                <a href="#">PORTFOLIO</a>
+                                <a href="#">CONTACT</a>
+                            </div>
+                            <div class="menu-bar">
+                                <span class="menu-btn"><i class="fas fa-bars"></i></span>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            <!-- == || HEADER == -->
+            <!-- == BANNER == -->
+                <section class="banner">
+                    <div class="paralax-view">
+                        <div class="paralax-mask">
+                            <div class="banner">
+                                <div class="banner-container container">
+                                    <div class="banner-text">
+                                        <h1>WELCOME TO OUR WEBSITE</h1>
+                                        <p>Web Design & Developpment at its best <br> focused on the client</p>
+                                        <button>READ MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <a href="index.html" class="link">Home</a>
-                    <a href="about.html" class="link">About</a>
-                    <a href="contact.html" class="link">Contact</a>
-                    <a href="portfolio.html" class="link">Portfolio</a>
-                    <a href="FAQ.html" class="link">FAQ</a>
-                </div>
-            </nav>
-            <div class="banner">
-                <div class="banner-text">
-                    <h1>Expand You Global Scope</h1>
-                    <p>Discover how to establish an online presence.</p>
-                    <button onclick="redirect()">Get Started Now</button>
-                </div>
-            </div>
-        </section>
-        <main>
-            <div class="portfolio">
-                <h1>Portfolio</h1>
-                <div class="portfolio-link">
-                    <span> <i class="fab fa-youtube"></i> YouTube:</span>
-                    <a href="https://www.youtube.com/channel/UCjRD7xWJbLW_L_5nLzvD9Bw" target="_blank">Code Prolific</a>
-                </div>
-            </div>
-            <div class="skills">
-                <div class="skill">
-                    <img src="css/img/webdev.jpg" alt="Web Developer" height="250px" width="250px">
-                    <div class="skill-text">
-                        <h4>Web Development</h4>
-                        <p>I'm well experienced, and will deliver modern quality products
-                        </p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img src="css/img/online tutor.jpg" alt="Online Tutor" height="250px" width="250px">
-                    <div class="skill-text">
-                        <h4>Online Tutoring</h4>
-                        <p>I will take you from basic to advance knowledge in HTML 5, CSS 3, Java & Android
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="skills">
-                <div class="skill">
-                    <img src="css/img/webdev.jpg" alt="Web Developer" height="250px" width="250px">
-                    <div class="skill-text">
-                        <h4>Data Entry</h4>
-                        <p>I'm well experienced, as per clientele directive
-                        </p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img src="css/img/online tutor.jpg" alt="Online Tutor" height="250px" width="250px">
-                    <div class="skill-text">
-                        <h4>Admin Assist</h4>
-                        <p>I'm able to lead teams. Orginizations is my motive using best know online softwares: JIRA & CLICK UP
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio">
-                <h1>Questions</h1>
-                <div class="portfolio-link">
-                   <button>Ask Now</button>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="portfolio">
-                <h1>Get In Touch;</h1>
-                <div class="portfolio-link">
-                    <a href="https://www.youtube.com/channel/UCjRD7xWJbLW_L_5nLzvD9Bw">kelvinchebon90@gmail.com</a>
-                </div>
-            </div>
-            <div class="copyright">
-                WebDev | 2021 Global Inc
-            </div>
-        </footer>
-    </div>
+                </section>
+            <!-- == || BANNER == -->
 
-    <!-- == Script == -->
-        <script src="js/script.js"></script>
+            <!-- == WORK COUNT == -->
+                <div class="work-count">
+                    <div class="container wrk-cnt-container">
+                        <div class="count">
+                            <h1>40</h1>
+                            <p>PROJECT COMPLETED</p>
+                        </div>
+                        <div class="count">
+                            <h1>4</h1>
+                            <p>YEARS OF EXPERIENCE</p>
+                        </div>
+                        <div class="count">
+                            <h1>1</h1>
+                            <p>HAPPY CUSTOMER</p>
+                        </div>
+                    </div>
+                </div>
+            <!-- == || WORK COUNT == -->
+
+            <!-- == OFFERS == -->
+                <div class="offers">
+                    <div class="img">
+                    </div>
+                    <div class="text">
+                        <h2>WHAT WE OFFER</h2>
+                        <h1>WHAT WE OFFER</h1>
+                        <p>We ensure that the client gets the best services delivered to them at their directive to ensure 100% client satisfaction</p>
+                        <div class="process">
+                            <span>1</span>
+                            <div class="process-txt">
+                                <h3>Research</h3>
+                                <p>A small progress is made here today</p>
+                            </div>
+                        </div>
+                        <div class="process">
+                            <span>2</span>
+                            <div class="process-txt">
+                                <h3>Research</h3>
+                                <p>A small progress is made here today</p>
+                            </div>
+                        </div>
+                        <div class="process">
+                            <span>3</span>
+                            <div class="process-txt">
+                                <h3>Research</h3>
+                                <p>A small progress is made here today</p>
+                            </div>
+                        </div>
+                        <div class="process">
+                            <span>4</span>
+                            <div class="process-txt">
+                                <h3>Research</h3>
+                                <p>A small progress is made here today</p>
+                            </div>
+                        </div>
+                        <button>START HERE TODAY!</button>
+                    </div>
+                </div>
+            <!-- == || OFFERS == -->
+            <!-- == SKILLS == -->
+                <div class="skills">
+                    <div class="skills-container">
+                        <div class="skill">
+                            <div id="icons">
+                                <div id="icon-span"></div>
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <h3>Web Design</h3>
+                            <p>Organizing content and images across a series of pages, integrating applications and other interactive elements</p>
+                        </div>
+                        <div class="skill">
+                            <div id="icons">
+                                <div id="icon-span"></div>
+                                <i class="fas fa-poll"></i>
+                            </div>
+                            <h3>Marketing</h3>
+                            <p>organizing content and images across a series of pages, integrating applications and other interactive elements</p>
+                        </div>
+                        <div class="skill">
+                            <div id="icons">
+                                <div id="icon-span"></div>
+                                <i class="fas fa-bezier-curve"></i>
+                            </div>
+                            <h3>Graphic Design</h3>
+                            <p>organizing content and images across a series of pages, integrating applications and other interactive elements</p>
+                        </div>
+                    </div>
+                </div>
+            <!-- == || SKILLS == -->
+            <!-- == TESTIMONIAL == -->
+            <div class="testimonials">
+                <div class="testimonial-container">
+                    <!-- ==  == -->
+                        <div class="testimonials-head">
+                            <p>Testimonials</p>
+                            <p>What Clients Say</p>
+                        </div>
+                    <!-- ==  == -->
+                        <div class="testimonial-slideshow">
+                            <!-- == Column == -->
+                                <div class="testimonial">
+                                    <img src="css/img/kibet.jpg" alt="">
+                                    <p>Chebon Kibet</p>
+                                    <p>Web Developer</p>
+                                    <p><i class="fas fa-quote-left"></i>What do I say? I had an imagination of the project that I wanted to create and code_p made it a reality. Bigups to this wonderful team.<i class="fas fa-quote-right"></i></p>
+                                </div>
+                            <!-- == Column == -->
+                                <div class="testimonial">
+                                    <img src="css/img/one.png" alt="">
+                                    <p>Kelvin Kimeli</p>
+                                    <p>Director</p>
+                                    <p><i class="fas fa-quote-left"></i>What do I say? I had project that I wanted to create and code_p made it a reality. Bigups to this wonderful team.<i class="fas fa-quote-right"></i></p>
+                                </div>
+                            <!-- == Column == -->
+                                <div class="testimonial">
+                                    <img src="css/img/mercy.jpg" alt="">
+                                    <p>Mercy Ng'ang'a</p>
+                                    <p>Manager</p>
+                                    <p><i class="fas fa-quote-left"></i>I had an imagination of the project that I wanted to create and code_p made it a reality. Bigups to this wonderful team.<i class="fas fa-quote-right"></i></p>
+                                </div>
+
+                            <!-- == Next and previous buttons == -->
+                                <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-arrow-left"></i></a>
+                                <a class="next" onclick="plusSlides(1)"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    <!-- ==  == -->
+                        <div class="testimonials-dots">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                </div>
+            </div>
+            <!-- == || TESTIMONIAL == -->
+            <!-- == FOOTER == -->
+                <footer>
+                    <div class="container">
+                        <div class="top-footer">
+                            <div class="footer-col">
+                                <h3>Social Links</h3>
+                                <p>Welcome to our one stop shop for clients with imagination to be made real. <br> Follow us today for conversation.</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h3>Usefull Links</h3>
+                                <ul>
+                                    <li><a href="#">HOME</a></li>
+                                    <li><a href="#">TEAM</a></li>
+                                    <li><a href="#">BLOG</a></li>
+                                    <li><a href="#">PORTFOLIO</a></li>
+                                    <li><a href="#">CONTACT</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h3>Get In Touch</h3>
+                                <div class="footer-contact">
+                                    <p><i class="fas fa-phone-alt"></i> +254715 - 925 - 156</p>
+                                    <p><i class="fas fa-envelope"></i> codeprolific254@gmail.com</p>
+                                    <p><i class="fas fa-location-arrow"></i> Seretunin centre, Baringo, Kenya</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-footer">
+                            <p>Copyright &copy; 2022 All rights reserved</p>
+                        </div>
+                    </div>
+                </footer>
+            <!-- == FOOTER == -->
+        </div>
+    <!-- == || MAIN PAGE == -->
+
+    <!-- == SCRIPTS == -->
+    <script src="js/script.js"></script>
+
 </body>
 </html>

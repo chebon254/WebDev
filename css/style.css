@@ -44,11 +44,12 @@ body{
     position: relative;
 }
 #load{
-    display: block;
+    position: relative;
+    display: none;
 }
 /* == Loading Screen == */
 .loading{
-    visibility: hidden;
+    display: block;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -961,6 +962,20 @@ form button{
     color: #ffffff;
   }
 /* == PORTFOLIO == */
+/* == 404 == */
+.error{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#message{
+    height: fit-content;
+    min-width: 300px;
+    max-width: 600px;
+}
+/* == 404 == */
 
 
 /* == RESPONSIVE == */
@@ -1041,6 +1056,11 @@ form button{
     .member{
         margin: 20px 0px;
     }
+    #message img{
+        height: 300px;
+        width: 400px;
+        aspect-ratio: 16 / 9;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1072,6 +1092,11 @@ form button{
     .testimonial P:nth-child(4){
         height: 100px;
         width: 380px;
+    }
+    #message svg{
+        height: 500px;
+        width: 600px;
+        aspect-ratio: 16 / 9;
     }
 }
 /* == || RESPONSIVE == */

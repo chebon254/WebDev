@@ -21,6 +21,23 @@ cancelBtn.onclick = ()=>{
 }
 
 
+
+/* ===  Loading Screen === */
+var loadTimer;
+
+function loadScreen() {
+  loadTimer = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("load").style.display = "block";
+}
+
+/* ===  Loading Screen === */
+
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -120,3 +137,14 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 /* == TAB == */
+
+
+
+/* == Scroll Reveal == */
+ScrollReveal().reveal('.banner', { delay: 500 });
+ScrollReveal().reveal('.work-count', { delay: 500 });
+ScrollReveal().reveal('.offers', { delay: 500 });
+ScrollReveal().reveal('.skills', { delay: 500 });
+ScrollReveal().reveal('.testimonials', { delay: 500 });
+ScrollReveal().reveal('.footer', { delay: 500 });
+/* == || Scroll Reveal == */

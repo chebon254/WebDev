@@ -27,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
 </head>
-<body onload="">
+<body onload="loadScreen()">
     <!-- == LOADER == -->
         <div class="loading" id="loading">
             <div class="loader"></div>
@@ -40,7 +40,7 @@
                     <nav id="nav-bar">
                         <div class="nav-container container">
                             <div class="logo">
-                                <a href="#" class="logo"> <img src="css/img/fav.png" alt="Logo" width="38px">ebDev</a>
+                                <a href="index.html" class="logo"> <img src="css/img/fav.png" alt="Logo" width="38px">ebDev</a>
                             </div>
                             <div class="links" id="links">
                                 <div class="cancel">
@@ -48,6 +48,7 @@
                                 </div>
                                 <a href="index.html">HOME</a>
                                 <a href="team.html">TEAM</a>
+                                <a href="blog.html">BLOG</a>
                                 <a class="active-link" href="portfolio.html">PORTFOLIO</a>
                                 <a href="contact.html">CONTACT</a>
                             </div>
@@ -87,6 +88,7 @@
                             <button class="btn" onclick="filterSelection('web-design')"> Web Design</button>
                             <button class="btn" onclick="filterSelection('application')"> Application</button>
                             <button class="btn" onclick="filterSelection('javascript')"> JavaScript</button>
+                            <button class="btn" onclick="filterSelection('youtube')"> YouTube</button>
                         </div>
 
                         <!-- Portfolio Gallery Grid -->
@@ -443,11 +445,11 @@
                             <div class="footer-col">
                                 <h3>Usefull Links</h3>
                                 <ul>
-                                    <li><a href="#">HOME</a></li>
-                                    <li><a href="#">TEAM</a></li>
-                                    <li><a href="#">BLOG</a></li>
-                                    <li><a href="#">PORTFOLIO</a></li>
-                                    <li><a href="#">CONTACT</a></li>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="team.html">TEAM</a></li>
+                                    <li><a href="blog.html">BLOG</a></li>
+                                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                                    <li><a href="contact.html">CONTACT</a></li>
                                 </ul>
                             </div>
                             <div class="footer-col">

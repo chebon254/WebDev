@@ -232,15 +232,15 @@ nav{
     margin: 0px;
 }
 .banner-text button{
-    height: 40px;
-    width: 200px;
+    height: 50px;
+    width: 220px;
     border: 0px;
     outline: none;
     border-radius: 4px;
     background-color: #fecd36;
 
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     color: #0e3155;
     margin: 20px auto 0px;
 }
@@ -250,6 +250,62 @@ nav{
     cursor: pointer;
 }
 /* == || End Paralax View == */
+
+
+
+
+/* == Thin Paralax View == */
+.thin-paralax-view{
+    height: 350px;
+    width: 100%;
+
+    visibility: visible;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    transform: translate3d(0px, 0px, 0px);
+
+    background-image: url('img/i-b-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.thin-paralax-mask{
+    height: 350px;
+    width: 100%;
+    background-color: #0e3155b8;
+}
+.thin-banner{
+    height: 350px;
+    width: 100%;
+}
+.thin-banner-container{
+    height: 350px;
+    max-width: 100% !important;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thin-banner-text{
+    transform: translateY(10px);
+    text-align: center;
+}
+.thin-banner-text p{
+    font-size: 21px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    margin: 0px;
+}
+.thin-banner-text p a{
+    color: #ffffff; 
+}
+.thin-banner-text p a:hover{
+    color: #fecd36; 
+}
+/* == || End Thin Paralax View == */
+
 
 /* == || BANNER == */
 
@@ -344,7 +400,6 @@ nav{
 }
 .offers .text button{
     height: 60px;
-    width: 250px;
     border: 0px;
     outline: none;
     border-radius: 4px;
@@ -640,6 +695,274 @@ footer{
 }
 /* == || FOOTER == */
 
+
+
+
+/* == TEAM == */
+/* == Team == */
+.team{
+    padding: 90px 0px;
+}
+.team-head{
+    text-align: center;
+    padding: 10px 0px;
+}
+.team-head h3{
+    color: #fecd36;
+    font-weight: 500;
+    font-size: 16px;
+}
+.team-head h1{
+    color: #0e3155;
+    font-weight: 800;
+    font-size: 24px;
+}
+.team-members{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+.member{
+    height: fit-content;
+    width: 250px;
+}
+.member img{
+    height: 320px;
+    width: 250px;
+}
+.member p:nth-child(2){
+    font-size: 18px;
+    font-weight: 600;
+    color: #0e3155;
+    text-align: center;
+    margin: 10px 0px;
+}
+.member p:nth-child(3){
+    font-size: 14px;
+    font-weight: 400;
+    color: #fecd36;
+    text-align: center;
+    margin: 5px 0px;
+}
+/* == TEAM == */
+
+/* == CONATACT PAGE == */
+
+/* == Contact == */
+.contact{
+    background-color: #ffffff;
+    padding: 50px 0px;
+}
+.contact-container{
+    height: fit-content;
+    width: 400px;
+    padding: 10px 20px 30px;
+}
+.contact-container h1{
+    color: #fecd36;
+    text-align: left;
+    margin: 0px;
+}
+.contact-container p{
+    color: #0e3155;
+    text-align: left;
+    margin: 0px;
+}
+form{
+    height: fit-content;
+    padding: 10px 0px 0px;
+}
+form label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #0e3155;
+}
+form input{
+    height: 40px;
+    width: 100%;
+    padding: 0px 10px;
+    outline: none;
+    border: 1px solid #0e3155;
+    background-color: #0e3155;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #ffffff;
+}
+form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #4d6e87;
+    opacity: 1; /* Firefox */
+}
+
+form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #4d6e87;
+}
+
+form input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #4d6e87;
+}
+form textarea::placeholder{
+    color: #4d6e87;
+}
+form textarea{
+    height: 100px;
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #0e3155;
+    border: 1px solid #0e3155;
+    border-radius: 4px;
+}
+form button{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 0;
+    border-radius: 4px;
+    background-color: #fecd36;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 10px 0px 0px;
+}
+
+/* == || Contact == */
+/* == || CONATACT PAGE == */
+
+/* == PORTFOLIO == */
+.portfolio{
+    padding: 50px 0px;
+}
+.portfolio-head{
+    text-align: center;
+    padding: 10px 0px 20px;
+}
+.portfolio h3{
+    color: #fecd36;
+    font-weight: 500;
+    font-size: 16px;
+}
+.portfolio h1{
+    color: #0e3155;
+    font-weight: 800;
+    font-size: 24px;
+}
+.portfolio .row {
+    margin: 10px -16px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .portfolio .row,
+  .portfolio .row > .portfolio .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .portfolio .column {
+    margin: 15px 4px;
+    float: left;
+    width: 296px;
+    border-radius: 2px;
+    display: none; /* Hide all elements by default */
+  }
+  .portfolio .column:hover {
+      cursor: pointer;
+  }
+  .portfolio .column:hover .content-mask{
+    display: block;
+}
+  /* Clear floats after rows */ 
+  .portfolio .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .portfolio .content {
+    background-color: white;
+    padding: 10px;
+    height: 300px;
+    width: 296px;
+    position: relative;
+    z-index: 0;
+  }
+  .portfolio .content img{
+    height: 300px;
+    width: 296px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 2px;
+  }
+  .portfolio .content .content-mask{
+    background-color: #0e3155a8;
+    height: 300px;
+    width: 296px;
+    padding: 6px 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    border-radius: 2px;
+    display: none;
+    transition: all ease 200ms !important;
+  }
+  .portfolio .content .content-text{
+    background-color: #00000000;
+    height: fit-content;
+    width: 296px;
+    padding: 6px 6px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    transition: all ease 200ms !important;
+  }
+  .portfolio .content-text h3{
+      font-weight: 500;
+      color: #fecd36;
+      transition: all ease 200ms !important;
+  }
+  .portfolio .content-text p{
+    font-weight: 400;
+    color: #ffffff;
+    transition: all ease 200ms !important;
+}
+  
+  /* The "show" class is added to the filtered elements */
+  .portfolio .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .portfolio .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .portfolio .btn:hover {
+    background-color: #0e3155;
+    color: #ffffff;
+  }
+  
+  .portfolio .btn.active {
+    background-color: #fecd36;
+    color: #ffffff;
+  }
+/* == PORTFOLIO == */
+
+
 /* == RESPONSIVE == */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 994px) {
@@ -705,11 +1028,17 @@ footer{
     .skill{
         margin: 20px 0px;
     }
+    .offers .text button{
+        width: 100%;
+    }
     .testimonial P:nth-child(4){
         max-width: 320px;
         min-width: 280px;
     }
     .footer-col{
+        margin: 20px 0px;
+    }
+    .member{
         margin: 20px 0px;
     }
 }
@@ -718,6 +1047,7 @@ footer{
 @media only screen and (min-width: 992px) {
     .container{
         margin: auto;
+        min-width: 85%;
         max-width: 1200px !important;
     }
     .links{
@@ -732,6 +1062,9 @@ footer{
     }
     .cancel{
         display: none;
+    }
+    .offers .text button{
+        width: 250px;
     }
     .offers .text{
         padding: 40px;

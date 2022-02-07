@@ -148,3 +148,10 @@ ScrollReveal().reveal('.skills', { delay: 500 });
 ScrollReveal().reveal('.testimonials', { delay: 500 });
 ScrollReveal().reveal('.footer', { delay: 500 });
 /* == || Scroll Reveal == */
+
+
+
+// Button When Clicked leads to another page
+function mySites() {
+  location.replace("contact.html")
+}
